@@ -1,10 +1,11 @@
 <template>
   <el-config-provider namespace="ep">
-    <BaseHeader />
-    <div style="display: flex">
-      <BaseSide />
-      <router-view></router-view>
-    </div>
+      <BaseHeader />
+      <div style="display: flex;">
+        <BaseSide style="min-height: 10vh"/>
+      </div>
+
+    <router-view></router-view>
   </el-config-provider>
 </template>
 
@@ -13,8 +14,8 @@
   text-align: center;
   color: var(--ep-text-color-primary);
 }
-
-.element-plus-logo {
-  width: 50%;
+.layout{
+   /*height: 20vh;*/
 }
+
 </style>

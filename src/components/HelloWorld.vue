@@ -15,8 +15,6 @@ const toast = () => {
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-
   <p>
     See
     <a href="https://element-plus.org" target="_blank">element-plus</a> for more
@@ -83,10 +81,6 @@ const toast = () => {
 
 <style>
 .ep-button {
-  margin: 4px;
-}
-.ep-button + .ep-button {
-  margin-left: 0;
   margin: 4px;
 }
 </style>
