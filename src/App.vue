@@ -1,13 +1,21 @@
 <template>
   <el-config-provider namespace="ep">
-    <BaseHeader />
-    <BaseSide style="height: 200px;display: flow"/>
+    <BaseHeader style=""/>
+    <div class="flex-container">
+      <BaseSide/>
+      <router-view/>
+    </div>
 
-    <router-view />
   </el-config-provider>
 </template>
 
 <style>
+.flex-container {
+  display: flex;
+  min-height: 80vh;
+  /*background-color: #42b8dd;*/
+  border-color: #42b8dd;
+}
 .content {
   display: flow;
   flex-direction: column;

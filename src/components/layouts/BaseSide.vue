@@ -5,6 +5,8 @@
     :collapse="isCollapse"
     @open="handleOpen"
     @close="handleClose"
+    :router="true"
+
   >
     <el-sub-menu index="1">
       <template #title>
@@ -24,7 +26,7 @@
         <el-menu-item index="1-4-1">item one</el-menu-item>
       </el-sub-menu>
     </el-sub-menu>
-    <el-menu-item index="2">
+    <el-menu-item index="/">
       <el-icon><icon-menu /></el-icon>
       <template #title>Navigator Two</template>
     </el-menu-item>
@@ -32,7 +34,7 @@
       <el-icon><document /></el-icon>
       <template #title>Navigator Three</template>
     </el-menu-item>
-    <el-menu-item index="4">
+    <el-menu-item index="/login">
       <el-icon><setting /></el-icon>
       <template #title>Navigator Four</template>
     </el-menu-item>
