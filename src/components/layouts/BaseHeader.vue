@@ -27,5 +27,9 @@ import { toggleDark } from "~/composables";
         <i inline-flex i="dark:ep-moon ep-sunny" />
       </button>
     </el-menu-item>
+    <el-menu-item h="full">
+      <el-icon><CirclePlus /></el-icon>
+      Add
+    </el-menu-item>
   </el-menu>
 </template>

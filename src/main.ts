@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
 // import "~/styles/element/index.scss";
 
@@ -11,10 +12,15 @@ import App from "./App.vue";
 
 import "~/styles/index.scss";
 import "uno.css";
+import router from './router';
 
 // If you want to use ElMessage, import it.
 import "element-plus/theme-chalk/src/message.scss";
 
 const app = createApp(App);
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+    app.component(key, component)
+}
 // app.use(ElementPlus);
 app.mount("#app");
+createApp(App).use(router);
