@@ -11,6 +11,7 @@
                       placement="top"
                       size="large"
                       type="primary"
+                      style="max-width: 20vh;margin: auto;min-height: 12vh"
     >
 
 

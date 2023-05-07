@@ -1,7 +1,7 @@
 <template>
 <div>
- <ApplyTimeLine :activities="itemList" reviewDate="2023-05-01" title="申请达尔豪斯大学时间线"></ApplyTimeLine>
-  <ApplyTimeLine style="" :activities="itemList2" review-date="2023-04-25" title="申请劳伦森大学时间线"></ApplyTimeLine>
+ <ApplyTimeLine center="true" class="time_line" :activities="itemList" reviewDate="2023-05-01" title="申请达尔豪斯大学时间线"></ApplyTimeLine>
+  <ApplyTimeLine class="time_line" :activities="itemList2" review-date="2023-04-25" title="申请劳伦森大学时间线"></ApplyTimeLine>
 </div>
 </template>
 
@@ -46,7 +46,9 @@ const itemList2: EventList = reactive([
   }
 ])
 </script>
-
 <style scoped>
 
+/*.time_line{*/
+/*  margin: auto;*/
+/*}*/
 </style>
