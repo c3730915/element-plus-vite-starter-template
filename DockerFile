@@ -1,0 +1,3 @@
+FROM nginx:latest
+LABEL Author jayden
+COPY build /usr/share/nginx/html

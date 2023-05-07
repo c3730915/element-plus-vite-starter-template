@@ -2,6 +2,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Home from './views/Home.vue'
 import Login from './views/Login.vue'
+import applyUniversity from "~/router/views/ApplyUniversity.vue";
+import applyVisa from "~/router/views/ApplyVisa.vue";
 
 const router = createRouter({
     history: createWebHashHistory(), // createWebHashHistory 为哈希模式的路由，如果需要选择 histiry 模式，可以用 createWebHistory 方法。
@@ -9,12 +11,22 @@ const router = createRouter({
         {
             path: '/',
             name: '/',
-            component: Home
+            component: applyUniversity
         },
         {
             path: '/login',
             name: 'login',
             component: Login
+        },
+        {
+            path:'/apply/university',
+            name: 'applyUniversity',
+            component: applyUniversity
+        },
+        {
+            path:'/apply/visa',
+            name: 'applyVisa',
+            component: applyVisa
         }
     ]
 })
