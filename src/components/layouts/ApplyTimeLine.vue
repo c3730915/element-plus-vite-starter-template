@@ -7,23 +7,24 @@
     <el-timeline-item v-for="(activity, index) in activities"
                       :timestamp="activity.timestamp"
                       :key="index"
-                      :color="activity.color"
-                      :icon="activity.icon"
+                      :hollow="activity.timestamp !== reviewDate"
                       placement="top"
                       size="large"
+                      type="primary"
     >
 
 
-      <el-card :style="{'background-color': activity.color !== '#0bbd87'?activity.color:'white'}">
-        <h4>{{activity.title}}</h4>
-<!--        <p>Tom committed 2018/4/12 20:46</p>-->
-      </el-card>
+      <span v-show="activity.timestamp === reviewDate" style="margin-right: 10px">
+        <el-icon color="green" size="15"><CircleCheckFilled /></el-icon>
+      </span>
+        <span>{{activity.title}}</span>
     </el-timeline-item>
   </el-timeline>
 
   <el-card shadow="always" style="width: 40vh;margin: auto;text-align: center"> 距离review 已经过去了{{calcDayDiff(reviewDate)}}天 </el-card>
 
-  <div style="margin-top: 20vh"></div>
+  <el-divider />
+  <div style="margin-top: 10vh"></div>
 </template>
 
 <script setup lang="ts">

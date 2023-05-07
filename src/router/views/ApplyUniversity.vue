@@ -1,7 +1,7 @@
 <template>
 <div>
  <ApplyTimeLine :activities="itemList" reviewDate="2023-05-01" title="申请达尔豪斯大学时间线"></ApplyTimeLine>
-  <ApplyTimeLine style="" :activities="itemList2" review-date="2023-04-19" title="申请劳伦森大学时间线"></ApplyTimeLine>
+  <ApplyTimeLine style="" :activities="itemList2" review-date="2023-04-25" title="申请劳伦森大学时间线"></ApplyTimeLine>
 </div>
 </template>
 
@@ -40,7 +40,7 @@ const itemList2: EventList = reactive([
   {
     title: '材料收齐',
     content: 'Custom icon',
-    timestamp: '2023-04-19',
+    timestamp: '2023-04-25',
     icon: CircleCheckFilled,
     color: '#03fcc2',
   }

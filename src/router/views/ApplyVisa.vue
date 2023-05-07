@@ -2,7 +2,8 @@
 <div class="box">
 
 
-  <ApplyTimeLine title="申请签证时间线"></ApplyTimeLine>
+  <h2 style="text-align: center">还未开始申请签证！</h2>
+<!--  <ApplyTimeLine title="申请签证时间线"></ApplyTimeLine>-->
 </div>
 </template>
 
