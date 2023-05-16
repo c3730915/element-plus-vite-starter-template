@@ -22,9 +22,15 @@
     </el-timeline-item>
   </el-timeline>
 
-  <el-card shadow="always" style="width: 40vh;margin: auto;text-align: center"> 距离review 已经过去了{{calcDayDiff(reviewDate)}}天 </el-card>
+  <el-card shadow="always" style="width: 40vh;margin: auto;text-align: center;background-color: #bce1af">
+    <span>
+      距离review 已经过去了{{calcDayDiff(reviewDate)}}天
+    </span>
 
-  <el-divider />
+    <p style="color: black">
+  </p>
+  </el-card>
+<!--  <el-divider />-->
   <div style="margin-top: 10vh"></div>
 </template>
 

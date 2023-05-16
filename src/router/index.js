@@ -2,7 +2,9 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Home from './views/Home.vue'
 import Login from './views/Login.vue'
-import applyUniversity from "~/router/views/ApplyUniversity.vue";
+import applyDal from "~/router/views/ApplyDal.vue";
+import applyLau from "~/router/views/ApplyLau.vue";
+
 import applyVisa from "~/router/views/ApplyVisa.vue";
 
 const router = createRouter({
@@ -11,7 +13,7 @@ const router = createRouter({
         {
             path: '/',
             name: '/',
-            component: applyUniversity
+            component: applyDal
         },
         {
             path: '/login',
@@ -19,9 +21,15 @@ const router = createRouter({
             component: Login
         },
         {
-            path:'/apply/university',
-            name: 'applyUniversity',
-            component: applyUniversity
+            path:'/apply/dal',
+            name: 'applyDal',
+            component: applyDal
+        },
+        {
+
+            path:'/apply/lau',
+            name: 'applyLau',
+            component: applyLau
         },
         {
             path:'/apply/visa',

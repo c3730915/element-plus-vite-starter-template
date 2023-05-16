@@ -12,7 +12,8 @@
               mode="horizontal"
               :router="true">
 
-            <el-menu-item index="/apply/university">申请大学</el-menu-item>
+            <el-menu-item index="/apply/dal">申请Dal</el-menu-item>
+            <el-menu-item index="/apply/lau">申请劳伦森</el-menu-item>
             <el-menu-item index="/apply/visa">申请签证</el-menu-item>
           </el-menu>
 
