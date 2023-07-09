@@ -7,30 +7,32 @@
     <el-timeline-item v-for="(activity, index) in activities"
                       :timestamp="activity.timestamp"
                       :key="index"
-                      :hollow="activity.timestamp !== reviewDate"
+                      :hollow="true"
                       placement="top"
                       size="large"
                       type="primary"
-                      style="max-width: 20vh;margin: auto;min-height: 12vh"
+                      style="max-width: 40vh;margin: auto;min-height: 12vh"
     >
 
 
-      <span v-show="activity.timestamp === reviewDate" style="margin-right: 10px">
+      <span v-show="activity.check" style="margin-right: 10px">
         <el-icon color="green" size="15"><CircleCheckFilled /></el-icon>
       </span>
         <span>{{activity.title}}</span>
     </el-timeline-item>
   </el-timeline>
 
-  <el-card shadow="always" style="width: 40vh;margin: auto;text-align: center;background-color: #bce1af">
+  <el-card shadow="always" style="width: 40vh;;margin: auto;text-align: center;background-color: #bce1af">
     <span>
-      距离review 已经过去了{{calcDayDiff(reviewDate)}}天
+      {{cardText}}
     </span>
 
     <p style="color: black">
   </p>
   </el-card>
-<!--  <el-divider />-->
+
+
+
   <div style="margin-top: 10vh"></div>
 </template>
 
@@ -44,7 +46,8 @@ import {computed} from "vue";
 interface Props {
   activities: EventList,
   title:String,
-  reviewDate:String
+  reviewDate:String,
+  cardText,
 }
 
 defineProps<Props>()
